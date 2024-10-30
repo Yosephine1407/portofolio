@@ -13,6 +13,10 @@ $rowpendidikan = mysqli_fetch_assoc($querypendidikan);
 $querypengalaman_pekerjaan = mysqli_query($koneksi, "SELECT * FROM pengalaman_pekerjaan ORDER BY id");
 $rowpengalaman_pekerjaan = mysqli_fetch_assoc($querypengalaman_pekerjaan);
 
+// menampilkan data kemampuan dari database
+$querykemampuan = mysqli_query($koneksi, "SELECT * FROM kemampuan ORDER BY id");
+$rowkemampuan = mysqli_fetch_assoc($querykemampuan);
+
 ?>
 
 <!DOCTYPE html>
@@ -77,7 +81,12 @@ $rowpengalaman_pekerjaan = mysqli_fetch_assoc($querypengalaman_pekerjaan);
                 <p><?php echo $rowpengalaman_pekerjaan['nama_perusahaan'] ?></p>
                 <p><?php echo $rowpengalaman_pekerjaan['bulan'] ?></p>
             </article>
-        </aside>
+
+            <article id="kemampuan" class="card">
+                <h3>Pengalaman Pekerjaan</h3>
+                <p><?php echo $rowkemampuan['nama_kemampuan'] ?></p>
+                <p><?php echo $rowkemampuan['level'] ?></p>
+            </article>
 
 </body>
 
