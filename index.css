@@ -1,0 +1,50 @@
+header {
+    background: #1abc9c;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+aside {
+    flex: 20%;
+    background: #222;
+}
+
+section main {
+    flex: 80;
+    background: #fff;
+    min-height: 530px;
+    padding: 15px 20px;
+}
+
+footer {
+    background: #ccc;
+    color: #555;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
+
+.menu {
+    padding: 0;
+}
+
+.menu li {
+    border-bottom: 1px dotted #444;
+}
+
+.menu a {
+    display: block;
+    padding: 20px 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #1abc9c;
+}

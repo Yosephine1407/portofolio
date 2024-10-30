@@ -1,0 +1,57 @@
+.form-group {
+    clear: both;
+}
+
+.form-group label {
+    display: block;
+    padding: 15px 0;
+    float: left;
+    width: 30%;
+    font-weight: bold;
+}
+
+.form-group .input {
+    display: block;
+    width: 50%;
+    float: left;
+    
+}
+
+input[type=text] {
+    background-color: #1abc9c;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+  }
+
+  input[type=date] {
+    background-color: #1abc9c;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+  }
+
+  .tombol.simpan {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @media (max-width: 700px) {
+    .form-group label, .form-group .input {
+        width: 100%;
+    }
+}
+
+  

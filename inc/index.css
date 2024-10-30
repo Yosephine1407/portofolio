@@ -1,0 +1,82 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2, h3 {
+    color: #1abc9c;
+}
+
+footer {
+    padding: 10px;
+    color: white;
+    background-color: #1abc9c;
+    text-align: center; /* Center footer text */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #1abc9c;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    background-color: #1abc9c;
+    padding: 5px;
+
+    position: sticky;
+    top: 0;
+  
+}
+
+main {
+    padding: 20px;
+
+    overflow: auto;
+    gap: 1rem;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+
+
+
+
+
+
