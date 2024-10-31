@@ -20,7 +20,7 @@ if (isset($_POST['edit'])) {
     $nama = $_POST['nama'];
     $tgl_lahir  = $_POST['tgl_lahir'];
     // ubah user kolom apa yang mau di ubah (SET), yang mau di ubah id ke berapa
-    $update = mysqli_query($koneksi, "UPDATE pekerjaan_pekerjaan SET nama_pekerjaan='$nama_pekerjaan', deskripsi='$deskripsi', nama_perusahaan='$nama_perusahaan', bulan='$bulan' WHERE id= '$id'");
+    $update = mysqli_query($koneksi, "UPDATE kemampuan SET nama_kemampuan='$nama_kemampuan', level='$level', WHERE id= '$id'");
     header("location:kemampuan.php?ubah=berhasil");
 }
 
