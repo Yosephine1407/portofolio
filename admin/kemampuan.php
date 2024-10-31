@@ -1,6 +1,6 @@
 <?php
 include '../koneksi.php';
-$queryprofil = mysqli_query($koneksi, "SELECT * FROM profil ORDER BY id DESC");
+$querykemampuan = mysqli_query($koneksi, "SELECT * FROM kemampuan ORDER BY id DESC");
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@ $queryprofil = mysqli_query($koneksi, "SELECT * FROM profil ORDER BY id DESC");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profil.css">
+    <link rel="stylesheet" href="kemampuan.css">
     <title>Document</title>
 </head>
 
@@ -30,17 +30,17 @@ $queryprofil = mysqli_query($koneksi, "SELECT * FROM profil ORDER BY id DESC");
         </tbody>
         <?php
         $no = 1;
-        $variable = mysqli_fetch_all($queryprofil, MYSQLI_ASSOC);
+        $variable = mysqli_fetch_all($querykemampuan, MYSQLI_ASSOC);
         foreach ($variable as $value) {
         ?>
             <tr>
                 <td><?php echo $no++ ?></td>
-                <td><?php echo $value['nama'] ?></td>
-                <td><?php echo $value['tgl_lahir'] ?></td>
+                <td><?php echo $value['nama_kemampuan'] ?></td>
+                <td><?php echo $value['level'] ?></td>
                 <td>
-                    <a class="tombol edit" href="tambah-profil.php?edit=<?php echo $value['id'] ?>">Edit</a>
+                    <a class="tombol edit" href="tambah-kemampuan.php?edit=<?php echo $value['id'] ?>">Edit</a>
                     <a class="tombol delete" onclick="return confirm('Apakah anda yakin akan menghapus data ini?')"
-                    href="profil.php?delete=<?php echo $value['id'] ?>">Delete</a>
+                    href="kemampuan.php?delete=<?php echo $value['id'] ?>">Delete</a>
                 </td>
             </tr>
         <?php
